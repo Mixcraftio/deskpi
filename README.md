@@ -1,6 +1,27 @@
-# deskpi
-DeskPi Pro is the Ultimate Case Kit for Raspberry Pi 4 with Full Size HDMI/2.5 Hard Disk Support and Safe Power Button, It has QC 3.0 Power Supply inside and New ICE Tower Cooler inside.
-## Product Links: https://deskpi.com
+# About the DeskPi Pro
+
+The DeskPi Pro is a hardware kit for converting a standard Raspberry Pi 4 from a naked SBC, with limited storage, into a mini PC complete with a power button, cooling, better ports and, via SATA then USB3, 2.5" or M.2 SSD storage.
+
+## Currently tested operating systems that can support Deskpi scripts
+* Raspberry Pi OS(32bit) - tested 
+* RaspiOS (64bit) - tested 
+* Ubuntu-mate OS(32bit) - tested
+* Ubuntu OS (64bit) - tested 
+* Manjaro OS (32bit) - tested 
+* Manjaro OS (64bit) - To be tested
+* Kali-linux-arm OS (32bit) - tested
+* Kali-linux-arm OS (64-Bit) - To be tested
+* Twister OS v2.0.2 (32bit) - tested 
+* DietPi OS (64bit) - tested
+* Volumio OS Version: 2021-04-24-Pi (32bit) - tested 
+* RetroPie OS (32bit) - tested
+* Windows 10 IoT - NOT Supported 
+* Windows 11 - To be tested 
+
+## Please Read this section carefully
+* if you are using 64bit OS, The script to control the fan is in the `rivers/c/` directory. The file suffix with `64` means `64bit`, and the one without a `32bit` executable file.
+* Before you install this script, please make sure your Raspberry Pi can access internet and can access github website.
+
 ## How to install it.
 ### For Raspbian and RetroPie OS.
 ```bash
@@ -9,6 +30,14 @@ git clone https://github.com/DeskPi-Team/deskpi.git
 cd ~/deskpi/
 chmod +x install.sh
 sudo ./install.sh
+```
+### For Ubuntu 64bit OS
+```bash
+cd ~
+git clone https://github.com/DeskPi-Team/deskpi.git
+cd ~/deskpi/
+chmod +x install-ubuntu-64.sh
+sudo ./install-ubuntu-64.sh
 ```
 ### For Ubuntu-mate OS
 ```bash
@@ -51,8 +80,14 @@ sudo ./install.sh
 cd ~
 git clone https://github.com/DeskPi-Team/deskpi.git
 cd ~/deskpi/
-chmod +x install.sh
-sudo ./install.sh
+chmod +x install-raspios-64bit.sh
+sudo ./install-raspios-64bit.sh
+```
+* Uninstall: 
+```
+cd ~/deskpi/
+chmod +x install-raspios-64bit.sh
+sudo ./uninstall-raspios-64bit.sh
 ```
 ### For DietPi OS 64bit 
 * Make sure your OS can access internet and please install `git` first.
