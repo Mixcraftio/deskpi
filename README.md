@@ -1,3 +1,5 @@
+# This repository was for a change in the deskpi project, it has no use now that the change was done.
+
 # About the DeskPi Pro
 
 The DeskPi Pro is a hardware kit for converting a standard Raspberry Pi 4 from a naked SBC, with limited storage, into a mini PC complete with a power button, cooling, better ports and, via SATA then USB3, 2.5" or M.2 SSD storage.
